@@ -6,6 +6,12 @@ so here it is, the minimal complete boilerplate app powered by gulp.
 
 Livereload included via gulp-connect and gulp-watch (the simple variant).
 
+requirements
+------------
+
+  * [node.js](http://nodejs.org)
+  * ```npm install -g gulp```
+
 how to use
 ----------
 
@@ -18,7 +24,7 @@ Run the following commands:
     $ npm init
     $ npm install
 
-To start developing, run
+(somebody should write a script for that...) To start developing, run
 
     $ gulp
 
@@ -32,10 +38,8 @@ If git is used (what it should be), run:
     $ git add .
     $ git commit -v
 
-To 
+Add a new remote location with
     
     $ git remote add origin git@github.com:my-git-username/my-new-app-name
 
-
-
-(One should write a script for that! xD) 
+---
