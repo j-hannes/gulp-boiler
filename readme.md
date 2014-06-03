@@ -26,6 +26,7 @@ Run the following commands:
     $ echo "" > readme.md
     $ npm init
     $ npm install
+    $ bower init
 
 (somebody should write a script for that...) To start developing, run
 
@@ -49,17 +50,3 @@ If git is used (what it always should be), run:
 Add a new remote location with
     
     $ git remote add origin git@github.com:my-git-username/my-new-app-name
-
-
-to add bower
-------------
-
-Either run the following commands
-
-    $ echo 'app/components' >> .gitignore
-    $ echo -e '{\n  "directory": "app/components"\n}' > .bowerrc
-    $ bower init
-    $ git add .gitignore .bowerrc bower.json
-    $ git commit -m "Add bower"
-
-or check out the bower branch of this repo instead.
