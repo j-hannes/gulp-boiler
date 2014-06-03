@@ -62,4 +62,6 @@ Either run the following commands
     $ git add .gitignore .bowerrc bower.json
     $ git commit -m "Add bower"
 
-or check out the bower branch of this repo instead.
+or check out the
+[bower branch](https://github.com/j-hannes/gulp-boiler/tree/variant-bower)
+of this repo instead.
