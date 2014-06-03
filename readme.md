@@ -22,6 +22,7 @@ Run the following commands:
     $ git clone https://github.com/j-hannes/gulp-boiler
     $ mv gulp-boiler my-awesome-app
     $ cd my-awesome-app
+    $ git checkout variant-bower
     $ rm -rf .git
     $ echo "" > readme.md
     $ npm init
