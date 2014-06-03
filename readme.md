@@ -29,7 +29,10 @@ Run the following commands:
 
     $ gulp
 
-That's it, nothing else needed... Happy coding!
+and in another terminal window
+
+    $ atom .
+    $ open http://localhost:8080
 
 
 re-initialize git
