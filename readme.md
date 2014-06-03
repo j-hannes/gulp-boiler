@@ -30,9 +30,11 @@ Run the following commands:
 
 That's it, nothing else needed... Happy coding!
 
----
 
-If git is used (what it should be), run:
+re-initialize git
+-----------------
+
+If git is used (what it always should be), run:
 
     $ git init
     $ git add .
@@ -41,5 +43,3 @@ If git is used (what it should be), run:
 Add a new remote location with
     
     $ git remote add origin git@github.com:my-git-username/my-new-app-name
-
----
