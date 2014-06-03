@@ -6,11 +6,13 @@ so here it is, the minimal complete boilerplate app powered by gulp.
 
 Livereload included via gulp-connect and gulp-watch (the simple variant).
 
+
 requirements
 ------------
 
   * [node.js](http://nodejs.org)
   * ```npm install -g gulp```
+
 
 how to use
 ----------
@@ -47,3 +49,17 @@ If git is used (what it always should be), run:
 Add a new remote location with
     
     $ git remote add origin git@github.com:my-git-username/my-new-app-name
+
+
+to add bower
+------------
+
+Either run the following commands
+
+    $ echo 'app/components' >> .gitignore
+    $ echo -e '{\n  "directory": "app/components"\n}' > .bowerrc
+    $ bower init
+    $ git add .gitignore .bowerrc bower.json
+    $ git commit -m "Add bower"
+
+or check out the bower branch of this repo instead.
