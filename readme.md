@@ -21,6 +21,7 @@ Run the following commands:
     $ mv gulp-boiler my-awesome-app
     $ cd my-awesome-app
     $ rm -rf .git
+    $ echo "" > readme.md
     $ npm init
     $ npm install
 
