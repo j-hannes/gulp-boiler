@@ -1,6 +1,8 @@
 var gulp    = require('gulp')
 var connect = require('gulp-connect')
 var watch   = require('gulp-watch')
+var sass    = require('gulp-sass')
+var gutil   = require('gulp-util')
 
 gulp.task('connect', function() {
   connect.server({
@@ -18,6 +20,21 @@ gulp.task('watch', function() {
       'app/images/**/*.*',
     ]
   }).pipe(connect.reload())
+
+  watch({
+    glob: [
+      'sass/**/*.scss'
+    ]
+  }, ['sass'])
+})
+
+gulp.task('sass', function() {
+  gulp.src('sass/main.scss')
+      .pipe(sass())
+      .on('error', function(error) {
+        gutil.log(error.message)
+      })
+      .pipe(gulp.dest('app/styles'))
 })
 
 gulp.task('default', [
